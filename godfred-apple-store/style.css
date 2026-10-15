@@ -5,12 +5,12 @@
   --ink: #26340d;         /* deep olive-ink — all text (replaces black) */
   --yellow: #ffd400;      /* yellow — buttons, bands & accents (replaces black) */
   --yellow-2: #f0c300;    /* yellow hover */
-  --green: #e7f7b5;       /* lemon green — main surface */
-  --card: #f2fbd6;        /* lightest lemon — cards & pills */
-  --gray-50: #d7ef92;     /* deeper lemon bands */
-  --gray-100: #eafac2;    /* photo placeholder backgrounds */
-  --gray-200: #cbe585;    /* borders & lines */
-  --gray-600: #5f6f38;    /* muted text on lemon */
+  --green: #d9f86e;       /* vivid lemon green — main surface */
+  --card: #edfbb0;        /* lightest lemon — cards & pills */
+  --gray-50: #cbf347;     /* deeper lemon bands */
+  --gray-100: #e3fa85;    /* photo placeholder backgrounds */
+  --gray-200: #b8e236;    /* borders & lines */
+  --gray-600: #55692a;    /* muted text on lemon */
   --radius: 16px;
   --container: 1160px;
   --header-h: 72px;
@@ -111,7 +111,7 @@ a { color: inherit; text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(231, 247, 181, 0.92);
+  background: rgba(217, 248, 110, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--gray-200);
   transition: box-shadow 0.25s ease;
