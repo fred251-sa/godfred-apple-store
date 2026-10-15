@@ -28,28 +28,3 @@ onScroll();
 // Current year in footer
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
-
-// Reveal-on-scroll animations (respecting reduced motion)
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (!prefersReducedMotion && "IntersectionObserver" in window) {
-  const revealTargets = document.querySelectorAll(
-    ".card, .feature, .review, .stat, .why-photo, .checklist li"
-  );
-
-  revealTargets.forEach((el) => el.classList.add("reveal"));
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("revealed");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 }
-  );
-
-  revealTargets.forEach((el) => observer.observe(el));
-}
